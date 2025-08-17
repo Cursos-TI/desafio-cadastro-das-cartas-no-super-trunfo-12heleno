@@ -25,6 +25,8 @@ int main() {
     float pib2;
 
  //Cadastro da primeira carta
+ printf("Digite os dados da primeira carta\n");
+ printf("\n");
 
     printf("digite o estado: ");
     scanf("%s", estado);
@@ -45,17 +47,12 @@ int main() {
     scanf("%f", &area);
 
     printf("digite o PIB: ");
-    scanf("%f", &pib);
-    
- //Impressão da primeira carta
+    scanf("%f",  &pib);
 
-    printf("Estado é: %s\n", estado);
-    printf("Código é: %s\n", cod);
-    printf("Cidade é: %s\n", cidade);
-    printf("População é: %d Habitantes\n", populacao);
-    printf("Número de Pontos Turísticos é: %d\n", npt);
-    printf("Área da cidade é: %.2f km²\n", area);
-    printf("PIB é: R$ %.f Bilhões\n", pib);
+
+    printf("Digite agora os dados da segunda carta\n");
+    printf("\n");
+    
 
  //Cadastro da segunda carta
 
@@ -79,9 +76,24 @@ int main() {
 
     printf("digite o PIB: ");
     scanf("%f", &pib2);
+
+    printf("\n");
+
+
+  //Impressão da primeira carta
+  printf("CARTA 1\n");
+    printf("Estado é: %s\n", estado);
+    printf("Código é: %s\n", cod);
+    printf("Cidade é: %s\n", cidade);
+    printf("População é: %d Habitantes\n", populacao);
+    printf("Número de Pontos Turísticos é: %d\n", npt);
+    printf("Área da cidade é: %.2f km²\n", area);
+    printf("PIB é: R$ %.f Bilhões\n", pib);
+    printf("\n");
+
     
  //Impressão da segunda carta
-
+ printf("CARTA 2\n");
     printf("Estado é: %s\n", estado2);
     printf("Código é: %s\n", cod2);
     printf("Cidade é: %s\n", cidade2);
@@ -89,6 +101,7 @@ int main() {
     printf("Número de Pontos Turísticos é: %d\n", npt2);
     printf("Área da cidade é: %.2f km²\n", area2);
     printf("PIB é: R$ %.f Bilhões\n", pib2);
+    printf("\n");
 
 return 0;   
 }
