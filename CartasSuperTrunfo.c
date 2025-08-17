@@ -48,6 +48,7 @@ int main() {
 
     printf("digite o PIB: ");
     scanf("%f",  &pib);
+    printf("\n");
 
 
     printf("Digite agora os dados da segunda carta\n");
