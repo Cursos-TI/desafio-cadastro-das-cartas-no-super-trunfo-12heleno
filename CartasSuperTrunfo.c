@@ -24,7 +24,7 @@ int main() {
     float area2;
     float pib2;
 
- //Cadastro da primeira carta
+//Cadastro da primeira carta
  printf("Digite os dados da primeira carta\n");
  printf("\n");
 
@@ -48,6 +48,10 @@ int main() {
 
     printf("digite o PIB: ");
     scanf("%f",  &pib);
+
+    float dens1 = populacao / area;
+    float pibp1 = pib / populacao;
+
     printf("\n");
 
 
@@ -78,6 +82,9 @@ int main() {
     printf("digite o PIB: ");
     scanf("%f", &pib2);
 
+    float dens2 = populacao2 / area2;
+    float pibp2 = pib2 / populacao2;
+
     printf("\n");
 
 
@@ -90,6 +97,8 @@ int main() {
     printf("Número de Pontos Turísticos é: %d\n", npt);
     printf("Área da cidade é: %.2f km²\n", area);
     printf("PIB é: R$ %.f Bilhões\n", pib);
+    printf("A densidade populacional é: %f hab/km²\n", dens1);
+    printf("PIB per Capta é: %f\n", pibp1);
     printf("\n");
 
     
@@ -102,6 +111,8 @@ int main() {
     printf("Número de Pontos Turísticos é: %d\n", npt2);
     printf("Área da cidade é: %.2f km²\n", area2);
     printf("PIB é: R$ %.f Bilhões\n", pib2);
+    printf("A densidade populacional é: %f hab/km²\n", dens2);
+    printf("PIB per Capta é: %f\n", pibp2);
     printf("\n");
 
 return 0;   
