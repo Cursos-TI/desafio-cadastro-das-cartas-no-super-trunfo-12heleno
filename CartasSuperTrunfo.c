@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo
 
 
 int main() {
@@ -14,6 +14,8 @@ int main() {
     int npt;
     float area;
     float pib;
+    
+    
 
 //variaveis carta 2
     char estado2[50];
@@ -23,8 +25,10 @@ int main() {
     int npt2;
     float area2;
     float pib2;
+    
+   
 
-//Cadastro da primeira carta
+ //Cadastro da primeira carta
  printf("Digite os dados da primeira carta\n");
  printf("\n");
 
@@ -114,6 +118,42 @@ int main() {
     printf("A densidade populacional é: %f hab/km²\n", dens2);
     printf("PIB per Capta é: %f\n", pibp2);
     printf("\n");
+
+ // Super Poder das cartas
+
+ float superPorder1 = populacao + npt + area + pib + pibp1 + pibp1 + dens1;
+ float superPorder2 = populacao2 + npt2 + area2 + pib2 + pibp2 + pibp2 + dens2;
+
+ printf("Super Poder das Cartas é!");
+ printf("\n");
+
+
+ printf("Super Poder da Carta 1: %f\n Super Poder da Carta 2 %f\n", superPorder1, superPorder2);
+
+ printf("\n");
+
+ // comparação das cartas
+
+ float CartaCampeã = (superPorder1) > (superPorder2);
+ float resultadoPIB = (pib) > (pib2);
+ float resultadoArea = (area) > (area2);
+ float resultadoPoulacao = (populacao) > (populacao2);
+ float resultadoDensidade = (dens1) > (dens2); 
+ float resultadoPIBp = (pibp1) > (pib2);
+
+ printf("Comparando os poderes das cartas!")
+ printf("\n");
+
+ printf("Super Poder da carta 1 é maior que carta 2? %f\n", CartaCampeã);
+ printf("PIB da carta 1 é maior que carta 2? %f\n", resultadoPIB);
+ printf("Área da carta 1 é maior que carta 2? %f\n", resultadoArea);
+ printf("População da carta 1 é maior que carta 2? %f\n", resultadoPoulacao);
+ printf("Densiodade da carta 1 é menor que carta 2? %f\n", resultadoDensidade);
+ printf("PIB per Capta Maior é %.2f\n", resultadoPIBp);
+ printf("\n");
+
+
+  
 
 return 0;   
 }
